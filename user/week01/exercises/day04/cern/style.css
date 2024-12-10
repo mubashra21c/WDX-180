@@ -1,0 +1,30 @@
+h1{
+    font-family: "Montserrat Underline", sans-serif;
+    border:5px solid rgb(251, 238, 238);
+    line-height: 2;
+    letter-spacing: 1px;
+    padding: 0px 10px 5px 20px;
+    margin:2px 20px;
+    text-shadow: 1px 2px 3px rgb(244, 199, 199);
+    color:aliceblue
+   
+}
+body{
+    text-align: center;
+    background-color: rgb(9, 9, 9);
+    margin:auto 100px;
+}
+p{ 
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    color:white;
+}
+a{
+    color: rgb(231, 241, 152);
+    font-style: italic ;
+}
+.head{
+    font-size: 25px;
+    color:rgb(156, 220, 234);
+    
+}
