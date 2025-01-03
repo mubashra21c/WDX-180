@@ -1,0 +1,76 @@
+h1 {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+table {
+  table-layout: fixed;
+  border: 2px solid #89a0bc;
+  border-collapse: collapse;
+  width: 90%;
+  text-align: left;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+thead th:nth-child(1) {
+  width: 25%;
+}
+
+thead th:nth-child(2) {
+  width: 35%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 15%;
+}
+
+thead th:nth-child(odd) {
+  background-color: #2b75d6;
+}
+
+thead th:nth-child(even) {
+  background-color: #1f589f;
+}
+
+thead th {
+  border-right: 1px solid white;
+  color: white;
+  padding-left: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+tbody th,
+tfoot th,
+td {
+  font-size: 13px;
+  line-height: 29px;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+tfoot th,
+tbody th {
+  padding-left: 10px;
+  border-right: 1px solid #89a0bc;
+}
+td {
+  padding-left: 10px;
+  text-align: center;
+  padding-top: 20px;
+}
+tfoot th {
+  color: #6b8dbe;
+  text-decoration: underline;
+}
+caption {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+#underline {
+  text-decoration: underline;
+}

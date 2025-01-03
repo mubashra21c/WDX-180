@@ -1,0 +1,48 @@
+table {
+  table-layout: fixed;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  border-collapse: collapse;
+  width:80%;
+}
+th,
+td {
+  padding: 0.3em;
+  vertical-align: top;
+}
+.num {
+  text-align: right;
+}
+.text {
+  text-align: left;
+}
+tfoot th {
+  text-align: right;
+}
+tfoot td {
+  text-align: left;
+}
+tfoot  {
+  border-top: 1px solid #999;
+  
+  
+}
+ tbody tr:nth-child(odd){
+    background-color: #eee;
+} 
+thead th:nth-child(1) {
+    width: 30%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 10%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 10%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 50%;
+  }
+  

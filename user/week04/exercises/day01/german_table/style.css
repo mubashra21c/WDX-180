@@ -1,0 +1,63 @@
+table {
+    table-layout: fixed;
+    width: 90%;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    border-bottom:4px solid black ;
+  }
+
+  thead th:nth-child(1) {
+    width: 20%;
+  }
+  
+  thead th:nth-child(2) {
+    width: 18%;
+  }
+  
+  thead th:nth-child(3) {
+    width: 18%;
+  }
+  
+  thead th:nth-child(4) {
+    width: 18%;
+  }
+  thead th:nth-child(5) {
+    width: 18%;
+  }
+  
+  caption{
+    font-size: 19px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  thead th{
+    font-weight: 400;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    color: white;
+    background-color: rgb(90,171,198);
+  }
+  tbody th{
+    font-weight: 400;
+    color: white;
+    background-color: rgb(90,171,198);
+    font-weight: 400;
+    padding-left:10px;
+    height: 5px;
+ 
+  }
+  tr{
+    height: 5px;
+  }
+  tr:nth-child(1) td{
+    background-color:rgb(212, 205, 205) ;
+  }
+  tr:nth-child(2) td:last-child::after{
+content:attr(data-last-letter) ;
+color: red;
+  }
+  td{
+    padding-left: 5px;
+  }
