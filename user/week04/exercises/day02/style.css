@@ -1,0 +1,144 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+h1 {
+  font-family: "Roboto", serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 5rem;
+  text-align: center;
+  letter-spacing: 5px;
+  word-spacing: 7px;
+}
+h2 {
+  font-family: "Roboto", serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+}
+p {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+ul,
+ol {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  line-height: 1.5rem;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+h2 + p {
+  text-indent: 15px;
+}
+section p a::after {
+  content: "";
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-left: 0.25em;
+  background-size: 100%;
+  background-image: url(external-link-52.png);
+}
+a:link {
+  color: rgb(181, 77, 77);
+}
+a:visited {
+  color: blueviolet;
+}
+a:focus {
+  outline-color: transparent;
+  text-decoration: none;
+  background-color: greenyellow;
+}
+a:hover {
+  text-decoration: none;
+  background-color: rgb(236, 125, 223);
+  color: white;
+}
+a:active {
+  color: white;
+  background-color: blue;
+}
+ul li {
+  line-height: 3.5rem;
+  list-style-type: square;
+}
+ol li {
+  line-height: 3.5rem;
+}
+.buttons .list li {
+  width: 150px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 50px;
+  color: #a66;
+  margin-bottom: 20px;
+  list-style-type: none;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
