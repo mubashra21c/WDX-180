@@ -413,6 +413,8 @@ Please, don't forget to star our [GitHub repo](https://github.com/in-tech-gratio
   - [Watch: **How does public key cryptography work – Gary explains**](https://www.youtube.com/watch?v=rLiEA06Bcic){:target="_blank"}
     - Duration: 16min
 
+  - [Watch: **Asymmetric Encryption** (By Simply explained)](https://www.youtube.com/watch?v=AQDCe585Lnc){:target="_blank"} to learn more about `public-key cryptography` and related concepts such as `private` and `public keys`, `asymmetric` and `symmetric encryption`. (A big thanks to [Mubashra Irshad](https://github.com/mubashra21c/) for reviewing and suggesting this resource.)
+
 <!-- Sources and Attributions -->
   
 </details>
