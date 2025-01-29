@@ -1,14 +1,23 @@
 'use strict';
 
 /* Remove Spaces
+    This program remove spaces from the input if any.
 
   Data In:
+   any text
 
 
   Data Out:
+   input along with spaceless input
+   
 
 
   Test Cases:
+   'hello world' -> 'before:hello world'
+                    'after:helloworld'
+
+    'hello' -> 'before:hello'
+                    'after:hello'
 
 
 */

@@ -1,14 +1,21 @@
 'use strict';
 
 /* Reverse
+    This program reverses the input.
+
 
   Data In:
+    any text
 
 
   Data Out:
+     input along with reversed input
 
 
   Test Cases:
+     'hello'-> 'hello -> olleh'
+    'coding'-> 'hello -> 'gnidoc'
+
 
 
 */

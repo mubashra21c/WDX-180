@@ -1,14 +1,19 @@
 'use strict';
 
 /* Mirror
+   This programs mirrors the input.
 
   Data In:
-
+    any text
 
   Data Out:
+    the mirrored input
 
 
   Test Cases:
+  '1234' -> '4321|1234'
+  'hello' ->'olleh|hello'
+
 
 
 */
