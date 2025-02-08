@@ -11,7 +11,7 @@ load_script_js_via_src:
   <span class="week-prefix">Week 06 |</span> CSS Frameworks & Intro to Programming
 </h1>
 
-{{ SGEN:HEADER_IMAGE }}
+<img src="assets/pexels-sevenstormphotography-439416.jpg" />
 
 <div class="week-controls">
 
@@ -28,7 +28,7 @@ load_script_js_via_src:
 
   </h2>
 
-  <span>Updated: 27/1/2025</span>
+  <span>Updated: 31/1/2025</span>
 
   <h2 class="week-controls__next_week">
 
@@ -146,6 +146,8 @@ load_script_js_via_src:
   - [The Pros and Cons of CSS Frameworks: A Comprehensive Review](https://dev.to/c0mmand3rj/the-pros-and-cons-of-css-frameworks-a-comprehensive-review-13db)
   
   - [Guide to CSS Framework](https://www.simplilearn.com/tutorials/css-tutorial/css-framework)
+
+  _Photo by [SevenStorm JUHASZIMRUS](https://www.pexels.com/photo/green-and-yellow-crane-439416/)_
   
 </details>
 
