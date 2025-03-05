@@ -8,13 +8,14 @@ title: Week 21 | React JS
   <span class="week-prefix">Week 21 |</span> React JS
 </h1>
 
+<img src="assets/introduction-to-react.jpg" />
+
 <div class="week-controls">
 
   {% assign week_num = 21 | to_integer %}
 
   <h2 class="week-controls__previous_week">
 
-    
     {% if week_num > 0 %}
 
       {% assign previous_week_num = 21 | to_integer | minus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -24,11 +25,10 @@ title: Week 21 | React JS
 
   </h2>
 
-  <span>Updated: 5/3/2024</span>
+  <span>Updated: 5/3/2025</span>
 
   <h2 class="week-controls__next_week">
 
-    
     {% if week_num <= 36 %}
 
       {% assign next_week_num = 21 | to_integer | plus: 1 | prepend: '00' | slice: -2, 2 %}
@@ -42,20 +42,98 @@ title: Week 21 | React JS
 
 ---
 
-<!-- Week 21 - Day 1 | React JS -->
+<!-- Week 21 - Day 1 | Intro to React - Lecture -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 21 - Day 1</span> | React JS</h2>
+      <span class="summary-day">Week 21 - Day 1</span> | Intro to React - Lecture</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: React JS**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** 
+    - History
+    - Front-End Frameworks
+    - Abstractions
+    - Modularization
+    - Custom elements
+    - Reusability
+    - Single Responsibility Principle
+    - Higher Abstraction Thinking
+    - JSX & Transpilers
+    - Adding React to a Website
+    - React Core, React DOM & React Native
+    - Babel
+    - Creating a Component
+
+  - **Part 2:** 
+    - Layout
+    - Tidied markup
+    - React project setup && frameworks
+    - Vite setup
+    - React Strick Mode
+    - Steps for Component creation
+    - React Fragments
+
+  You can find the lecture code (created using `vite`) [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week21/assets/day01/code){:target="_blank"} and the lecture diagrams [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week21/assets/day01/diagrams){:target="_blank"}.
+
+  **Lecture Notes & Questions:**
+
+  - **ALWAYS** develop JS apps with the Browser console open  
+  - Use the **.jsx** extension in files that use JSX. For plain JS files, you can stick with the **.js**  
+  - How to include a folder inside a VSCode workspace from the CLI?  
+    - `code -a some_folder/path`  
+  - Avoid duplicate folders when creating a new React project using Vite: you **do not need to create a new folder manually** *(e.g. mkdir my-react-project)*. The npm create vite command will do this automatically.
+
+  **Questions:**  
+
+  - *When should we use the self-closing syntax vs the open/closing tags with Components?*  
+    - Use `<SelfClosing />` when no content is required  
+    - Use `<OpenClose>`When content is between the tags`</OpenClose>`  
+  - *Does **`<React.StrictMode>`** end up in production build when using Vite?*  
+    - According to the [React docs](https://react.dev/reference/react/StrictMode#enabling-strict-mode-for-entire-app){:target="_blank"}: *“All of these checks are development-only and do not impact the production build.”*  
+  - *Can Vite optimize images automatically?*  
+    - There seems to be a plugin available: [https://github.com/FatehAK/vite-plugin-image-optimizer](https://github.com/FatehAK/vite-plugin-image-optimizer){:target="_blank"}  
+  - *What about WebVitals in Vite?*  
+  - *What is the `<></>` syntax?*  
+    - It’s called the [**React Fragment**](https://react.dev/reference/react/Fragment){:target="_blank"}  
+  - *Can we turn a PWA into an Android app?*  
+    - There seems to be an app created by Google called [BubbleWrap](https://www.youtube.com/watch?v=QJlbMfW3jPc){:target="_blank"}
+
+  **References & Resources:**
+
+  - The [old React docs](https://legacy.reactjs.org/){:target="_blank"} (Outdated, but useful from time to time.)  
+  - The [new React docs](https://react.dev/){:target="_blank"} (Preferred. Make sure to bookmark!)  
+  - Browser Extension for drawing on the page: [**Page Marker Draw on Web**](https://chromewebstore.google.com/detail/page-marker-draw-on-web/jfiihjeimjpkpoaekpdpllpaeichkiod){:target="_blank"}  
+  - [**Progressive Web Apps**](https://web.dev/explore/progressive-web-apps){:target="_blank"} *(before going deeper into the native mobile application development, you might want to check this first.)*  
+  - [**ElectronJS**](https://www.electronjs.org/){:target="_blank"} *(mentioned during the lecture)* allows you to developer Desktop apps (that do not require a browser) using HTML, CSS and JS (+JS libraries like React). VSCode, Skype, Slack and other applications are ElectronJS apps.  
+  - [Add React in a minute](https://legacy.reactjs.org/docs/add-react-to-a-website.html#add-react-in-one-minute){:target="_blank"} (a bit outdated, from the old docs)  
+  - [ReactPDF](https://react-pdf.org/){:target="_blank"}  
+  - [ReactThreeFiber](https://github.com/pmndrs/react-three-fiber){:target="_blank"} (for rendering 3D graphics)  
+  - [Remotion](https://www.remotion.dev/){:target="_blank"}: create videos using React  
+  - [WebNapkin](https://webnapkin.netlify.app/){:target="_blank"}: a simple drawing tool (work-in-progress) made in React  
+  - Optimizing images (for free): [**TinyPNG**](https://tinypng.com/){:target="_blank"} *(also **supports other formats such as JPG** not just PNG)*  
+    - If you have a Mac, you can also use [ImageOptim](https://imageoptim.com/mac){:target="_blank"}  
+  - How can you create a new React project?  
+    - Using Vite: **npm create vite@latest**  
+    - Using Create-React-App (CRA): **npx create-react-app my-app**  
+    - Using Next.js (full-stack framework. Make sure that you need the extra baggage that comes with it)  
+    - Using Gatsby (full-stack framework)  
+    - Using Webpack (quite hard. Use it only if you want full and total control and configuration over the development process)  
+  - Vite project structure:  
+    - **node_modules/**: npm dependencies  
+    - **public/**: static files  
+    - **src/**: where all the application code lives  
+    -   **assets/**: static assets and resources, e.g. images that will be imported dynamically (through *import()*)  
+    - The src folder should be your main focus
 
 <!-- Summary -->
 
@@ -398,11 +476,22 @@ export default function ShoppingList() {
 
 <!-- Summary -->
 
-<!-- Exercises -->
+### Exercises
+
+  Complete the following coding challenges:
+
+  - [BackChat](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/javascript/frameworks/react/exercises/BackChat/README.md){:target="_blank"}
+  - [Holy Grail](https://github.com/in-tech-gration/WDX-180/blob/main/curriculum/modules/javascript/frameworks/react/exercises/HolyGrail/README.md){:target="_blank"}
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week21/progress/progress.draft.w21.d02.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 ### Extra Resources
 
 - [Who was Hedy Lamar?](https://www.youtube.com/watch?v=_rlXHNeQD-s){:target="_blank"}
+- Vimeo trailers you can embed without login: [https://vimeo.com/ondemand/browse](https://vimeo.com/ondemand/browse){:target="_blank"}
 
 ### Sources and Attributions
 
@@ -428,24 +517,122 @@ export default function ShoppingList() {
 
 <hr class="mt-1">
 
-<!-- Week 21 - Day 3 | React JS -->
+<!-- Week 21 - Day 3 | JSX & Component Props -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 21 - Day 3</span> | React JS</h2>
+      <span class="summary-day">Week 21 - Day 3</span> | JSX & Component Props</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: React JS**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
 
-<!-- Summary -->
+  ![](./assets/day03/How.React.Works.png)
 
-<!-- Exercises -->
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** Lecture Topics (**thanks to Aris Giotis ❤️**)
+    - How compilation works: 08:59
+    - Question: same function with different output: 9:30
+    - Why to use tsx in StackBlitz: 12:13
+    - ReactStrictMode removal: 14:04
+    - The ! symbol in TypeScript (non-null): 17:18
+    - The ts-nocheck directive: 19:42
+    - The Chicken/egg function analogy: 21:22
+    - Call the function: 22:38
+    - How Babel works: 23:51
+    - Nested components & Babel: 23:51
+    - Can we use arrow functions: 30:00
+    - Define component into their own file: 30:43
+    - Returning JSX syntax vs function call: 33:01
+    - Component in own file: 34:38
+    - Export - import function: 36:31
+    - Using JSX extension when importing: 41:11
+    - Components with parameters: 43:59
+    - Returning a single value: 49:19
+    - JSX to JS transformer: 52:26
+    - Discarded content: 57:58
+    - Props: 58:41
+    - Props.children: 1:04:27
+    - Undefined: 1:10:01
+    - Can you add an attribute: 1:11:21
+    - Unexpected string rendering problem: 1:11:37
+    - How JSX compiler works: 1:13:28
+    - Switching modes: 1:14:25
+    - XML mode: 1:14:35
+    - Example walkthrough: 1:20:23
+    - Think like "JS": 1:23:15
+    - Counter of opening & closing tags: 1:23:55
+    - RULE 2: ALWAYS CLOSE self-closing elements: 1:28:25
+    - Linting: 1:28:25
+
+  - **Part 2:** Lecture Topics (**thanks to Aris Giotis ❤️**)
+    - Challenge: JS in HTML land: 03:32
+    - The {} syntax in HTML mode: 04:41
+    - (limited functionality) JS expressions: 6:26
+    - What is a JS expression: 8:57
+    - Can we use variables: 12:47
+    - Replace static content: 15:04
+    - Always close the self-closing tags: 18:12
+    - Undefined and null are invisible: 18:33
+    - typeof props.children: 19:44
+    - What else is contained in props object: 19:59
+    - HTML boolean attributes: 20:36
+    - Supplying an attribute to a component (property injection): 20:47
+    - Like passing different arguments on the props parameter: 20:42
+    - Conditional checking: 23:50
+    - Use default color: 23:34
+    - Why the check uses typeof: 25:17
+    - typeof always returns a string: 26:21
+    - Question: 34:29
+    - For any other value than string passed as props: 38:58
+    - Passing a collection: 42:45
+    - Channel component: 46:32
+    - iframe HTML tag: 47:49
+    - frameborder error: 54:33
+    - HTML attributes to camelCase: 56:38
+    - Error in JSX: 56:56
+    - Template literals: 59:15
+    - Exercise description: 1:02:38
+    - Share & embed: 1:04:18
+
+  You can find the lecture code [here](https://github.com/in-tech-gration/WDX-180/tree/main/curriculum/week21/assets/day03/code){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  VSCode shortcut: Use **Ctrl + `** => Minimize the Terminal
+
+  **References & Resources:**
+
+  - [**The JS Modules**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules){:target="_blank"}
+  - [Online React jsx to javascript transformer using babel-cli](https://infoheap.com/online-react-jsx-to-javascript/){:target="_blank"}
+  - [HTML-to-JSX](https://transform.tools/html-to-jsx){:target="_blank"}
+
+### Summary
+
+  - What does `React` teaches us?
+    - **Encapsulation**
+    - **Reusability**
+    - **Composition & Composability**
+    - The **DRY** Principle
+
+### Exercises
+
+  - Practice on `<YouTube />` Component
+  - Create a `<Vimeo id="...">` Component
+
+  ![](./assets/day03/Vimeo.1.jpg)
+  ![](./assets/day03/Vimeo.2.jpg)
+
+  **IMPORTANT:** Make sure to complete all the tasks found in the **daily Progress Sheet** and update the sheet accordingly. Once you've updated the sheet, don't forget to `commit` and `push`. The progress draft sheet for this day is: **/user/week21/progress/progress.draft.w21.d03.csv**
+
+  You should **NEVER** update the `draft` sheets directly, but rather work on a copy of them according to the instructions [found here](../week01/resources/PROGRESS-WORKFLOW.md).
+
 
 <!-- Extra Resources -->
 
@@ -762,26 +949,44 @@ button {
 
 <hr class="mt-1">
 
-<!-- Week 21 - Day 5 | React JS -->
+<!-- Week 21 - Day 5 | TBA -->
 <details markdown="1">
   <summary>
     <h2>
-      <span class="summary-day">Week 21 - Day 5</span> | React JS</h2>
+      <span class="summary-day">Week 21 - Day 5</span> | TBA</h2>
   </summary>
 
 ### Schedule
 
-  - **Lecture: React JS**
-  - **Practice**
-  - **Work on Project (Group/Personal)**
+  - **Watch the lectures**
+  - **Study the suggested material**
+  - **Practice on the topics and share your questions**
 
-<!-- Study Plan -->
+### Study Plan
+
+  Your instructor will share the video lectures with you. Here are the topics covered:
+
+  - **Part 1:** 
+  - **Part 2:**
+
+  You can find the lecture code [here](){:target="_blank"}
+
+  **Lecture Notes & Questions:**
+
+  **References & Resources:**
 
 <!-- Summary -->
 
 <!-- Exercises -->
 
-<!-- Extra Resources -->
+### Extra Resources
+
+  ---
+
+
+
+  _Photo by []()_
+
 
 <!-- Sources and Attributions -->
   
@@ -792,3 +997,15 @@ button {
 
 **Weekly feedback:** Hey, it's really important for us to know how your experience with the course has been so far, so don't forget to fill in and submit your [**mandatory** feedback form](https://forms.gle/S6Zg3bbS2uuwsSZF9){:target="_blank"} before the day ends. Thanks you!
 
+
+
+---
+
+<!-- COMMENTS: -->
+<script src="https://utteranc.es/client.js"
+  repo="in-tech-gration/WDX-180"
+  issue-term="pathname"
+  theme="github-dark"
+  crossorigin="anonymous"
+  async>
+</script>
