@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+Gunjala+Gondi:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+    <table>
+        <caption>VAR <span>VS</span>    LET <span>VS</span> CONST </caption>
+        <thead>
+            <tr>
+                <th scope="col" class="col-v" ></th>
+                <th scope="col" class="col-v">var</th>
+                <th scope="col" class="col-v">let</th>
+                <th scope="col" class="col-v">const</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row" class="row-h">Stored in Global Scope</th>
+            <td><span class="circle green">&#10004;</span></td>
+            <td><span class="circle red">&#10006;</span></td>
+            <td><span class="circle red">&#10006;</span></td>
+        </tr>
+        <tr>
+            <th scope="row" class="row-h">Function Scope</th>
+            <td><span class="circle green">&#10004;</span></td>
+            <td><span class="circle green">&#10004;</span></td>
+            <td><span class="circle green">&#10004;</span></td>
+        </tr>
+        <tr>
+            <th scope="row" class="row-h">Block Scope</th>
+            <td><span class="circle red">&#10006;</span></td>
+            <td><span class="circle green">&#10004;</span></td>
+            <td><span class="circle green">&#10004;</span></td>
+        </tr>
+        <tr>
+            <th scope="row" class="row-h">Can Be Reassigned</th>
+            <td><span class="circle green">&#10004;</span></td>
+            <td><span class="circle green">&#10004;</span></td>
+            <td><span class="circle red">&#10006;</span></td>
+        </tr>
+        <tr>
+            <th scope="row" class="row-h">Can Be Redeclared</th>
+            <td><span class="circle green">&#10004;</span></td>
+            <td><span class="circle red">&#10006;</span></td>
+            <td><span class="circle red">&#10006;</span></td>
+        </tr>
+        <tr>
+            <th scope="row" class="row-h">Can Be Hoisted</th>
+            <td><span class="circle green">&#10004;</span></td>
+            <td><span class="circle red">&#10006;</span></td>
+            <td><span class="circle red">&#10006;</span></td>
+        </tr>
+    </tbody>
+    </table>
+</div>
+</body>
+</html>
